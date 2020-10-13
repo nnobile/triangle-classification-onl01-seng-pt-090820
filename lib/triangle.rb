@@ -7,7 +7,7 @@ class Triangle
     @length_side3 = length_side3
   end
 
-  def kind(:isosceles, :equilateral, )
+  def kind(:isosceles, :equilateral, :scalene)
 
   class TriangleError < StandardError
     # triangle error code
