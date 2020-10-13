@@ -14,12 +14,15 @@ class Triangle
       raise Triangle::TriangleError
     elsif @side1 + @side2 <= @side3 || @side2 + @side3 <= @side1 || @side3 + @side1 <= @side2
       raise Triangle::TriangleError
-    
-
+    end
   end
+
+
+
 end
 
   class TriangleError < StandardError
+
     # triangle error code
     # The sum of the lengths of any two sides of a triangle always exceeds the length
     # of the third side. This is a principle known as the _triangle inequality_.
