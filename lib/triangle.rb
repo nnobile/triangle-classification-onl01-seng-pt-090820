@@ -15,6 +15,8 @@ class Triangle
     elsif @side1 + @side2 <= @side3 || @side2 + @side3 <= @side1 || @side3 + @side1 <= @side2
       raise Triangle::TriangleError
     end
+    #define what constitues an equilateral triangle
+    if @side1 == @side2 && @side2 == @side3 
 
 
   end
