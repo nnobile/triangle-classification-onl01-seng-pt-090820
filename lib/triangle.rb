@@ -22,7 +22,10 @@ class Triangle
     elsif (@side1 != @side2) && (@side2 != @side3) && (@side1 != @side3)
       return :scalene
     # define what isoscleles an scalene triangle
-  else :isosceles 
+    else
+      return :isosceles
+    end
+
 
 
   end
