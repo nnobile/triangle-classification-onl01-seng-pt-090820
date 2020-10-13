@@ -15,11 +15,14 @@ class Triangle
     elsif @side1 + @side2 <= @side3 || @side2 + @side3 <= @side1 || @side3 + @side1 <= @side2
       raise Triangle::TriangleError
     end
-    #define what constitues an equilateral triangle
+    # define what constitues an equilateral triangle
     if (@side1 == @side2) == (@side2 == @side3)
       return :equilateral
-    elsif (@side1 != @side2) && (@side1 != @side3)
+    # define what constitues an scalene triangle
+    elsif (@side1 != @side2) && (@side2 != @side3) && (@side1 != @side3)
       return :scalene
+    # define what isoscleles an scalene triangle
+  else :isosceles 
 
 
   end
