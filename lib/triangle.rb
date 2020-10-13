@@ -19,6 +19,7 @@ class Triangle
     if @side1 == (@side2 == @side3)
       return :equilateral
     elsif @side1 != (@side2 != @side3)
+      return :scalene
 
 
   end
