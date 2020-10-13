@@ -19,11 +19,11 @@ class Triangle
 
   end
 
+  class TriangleError < StandardError
 
 
   end
 
-  class TriangleError < StandardError
 
     # triangle error code
     # The sum of the lengths of any two sides of a triangle always exceeds the length
