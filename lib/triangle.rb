@@ -16,7 +16,7 @@ class Triangle
       raise Triangle::TriangleError
     end
     # define what constitutes an equilateral triangle
-    if (@side1 == @side2) == (@side2 == @side3)
+    if (@side1 == @side2) == (@side2 == @side3) == (@side1 == @side3)
       return :equilateral
     # define what constitutes a scalene triangle
     elsif (@side1 != @side2) && (@side2 != @side3) && (@side1 != @side3)
