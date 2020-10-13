@@ -18,7 +18,7 @@ class Triangle
     #define what constitues an equilateral triangle
     if @side1 == (@side2 == @side3)
       return :equilateral
-    elsif
+    elsif @side1 != (@side2 != @side3)
 
 
   end
