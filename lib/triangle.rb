@@ -12,6 +12,8 @@ class Triangle
     # There are 2 cases: any side = 0, sum of two sides must exceed length of third side
     if @side1 <= 0 || @side2 <= 0 || @side3 <= 0
       raise Triangle::TriangleError
+    elsif @side1 + @side2 <= @side3 || @side2 + @side3 <= @side1 || @side3 + @side1 <= @side2
+      raise Triangle::TriangleError
 
   end
 end
