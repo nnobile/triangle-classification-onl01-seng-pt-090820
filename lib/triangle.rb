@@ -10,7 +10,8 @@ class Triangle
   def kind
     # First identify the invalid types of triangles.
     # There are 2 cases: any side = 0, sum of two sides must exceed length of third side
-    if @side1 <= 0
+    if @side1 <= 0 || @side2 <= 0 || @side3 <= 0
+      return
 
   end
 end
